@@ -1,0 +1,56 @@
+﻿// string name = "Максим";
+// string groupname = "isp252";
+// int coursenumber = 2;
+// double averageGrade = 4.5;
+// bool IsStudent = true;
+
+// Console.WriteLine($"Студент: {name}"); // имя студента
+// Console.WriteLine($"Группа: {groupname}");// название группы
+// Console.WriteLine($"Курс: {coursenumber}");
+// Console.WriteLine($"Средняя оценка: {averageGrade}");
+// Console.WriteLine($"Проверка на студента: {IsStudent}");
+
+// Console.WriteLine("Ремонт комнаты");
+// double roomWidth = 3.5;
+// double roomLength = 4.2;
+// double RoomArea = roomWidth * roomLength;
+// double roomPerimeter = (roomWidth + roomLength) * 2; // поиск периметра
+// Console.WriteLine($"Ширина - {roomWidth} м, длина - {roomLength} м");
+// Console.WriteLine($"Периметр - {roomPerimeter}");
+// Console.WriteLine($"Площадь - {RoomArea}");
+
+/*
+мы посчитали 
+периметр
+*/
+using System.Diagnostics;
+
+// string firstname = "Денис";
+// string lastName = "Леонтьев";
+// string fullNameContact = firstname + " " + lastName;
+// string fullNameIntrep = $"{firstname}{lastName}";
+// string fillNameContactMethod = string.Concat(firstname, " ", lastName);
+// Console.WriteLine(fullNameContact);
+// Console.WriteLine(fullNameIntrep);
+// Console.WriteLine(fillNameContactMethod);
+
+
+// const double VatRate = 0.2;
+// const string CollgeName = "ВФ ВолГУ";
+// double productPrice = 1000;
+// double priceWithVat = productPrice * (1 + VatRate);
+// Console.WriteLine($"Учебное заведение: {CollgeName}");
+// Console.WriteLine($"Цена без НДС: {productPrice}, c НДС ({VatRate:P0}):{priceWithVat}");
+
+int lapTopPrice = 65000;
+int monthsCount = 12;
+double interestRate = 0.08;
+
+double totalWithInterest = lapTopPrice * (1 + interestRate);
+double monthlyPayment = totalWithInterest / monthsCount;
+
+Console.WriteLine($"Цена ноутбука: {lapTopPrice} руб.");
+Console.WriteLine($"Итого с процентами: {totalWithInterest} руб");
+Console.WriteLine($"Платеж в месяц: {monthlyPayment} руб.");
+
+
