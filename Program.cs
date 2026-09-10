@@ -86,10 +86,12 @@ using System;
 // Console.WriteLine($"Учебных недель осталось в семестре: {weeksRemaining}");
 
 
-int scholarShip = 3500;
-int monthlyExpenses = 3000;
-int fullMonth = scholarShip - monthlyExpenses;
-Console.WriteLine($"Остаток в месяц: {fullMonth} руб.");
-const int monthsInSemestr = 4;
-int total = fullMonth * monthsInSemestr;
-Console.WriteLine($"Остаток денег за семестр: {total} руб.");
+double celsius = 36.6;
+
+const double fahrenheit1 = 32;
+const double kelvin1 = 273.15;
+
+double fahrenheit = celsius * 9/5 + fahrenheit1;
+double kelvin = celsius + kelvin1;
+
+Console.WriteLine($"{celsius}C = {fahrenheit}F = {kelvin}K");
