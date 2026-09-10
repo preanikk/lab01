@@ -86,12 +86,22 @@ using System;
 // Console.WriteLine($"Учебных недель осталось в семестре: {weeksRemaining}");
 
 
-double celsius = 36.6;
+// double celsius = 36.6;
 
-const double fahrenheit1 = 32;
-const double kelvin1 = 273.15;
+// const double fahrenheit1 = 32;
+// const double kelvin1 = 273.15;
 
-double fahrenheit = celsius * 9/5 + fahrenheit1;
-double kelvin = celsius + kelvin1;
+// double fahrenheit = celsius * 9/5 + fahrenheit1;
+// double kelvin = celsius + kelvin1;
 
-Console.WriteLine($"{celsius}C = {fahrenheit}F = {kelvin}K");
+// Console.WriteLine($"{celsius}C = {fahrenheit}F = {kelvin}K");
+
+
+
+int totalMinutes = 500;
+int minutesPerLesson = 45;
+
+int ostatok = totalMinutes % minutesPerLesson;
+int lessons = totalMinutes / minutesPerLesson;
+
+Console.WriteLine($"{totalMinutes} минут = {lessons} полных занятий + {ostatok} минут.");
