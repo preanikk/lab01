@@ -23,7 +23,7 @@
 мы посчитали 
 периметр
 */
-using System.Diagnostics;
+using System;
 
 // string firstname = "Денис";
 // string lastName = "Леонтьев";
@@ -42,15 +42,54 @@ using System.Diagnostics;
 // Console.WriteLine($"Учебное заведение: {CollgeName}");
 // Console.WriteLine($"Цена без НДС: {productPrice}, c НДС ({VatRate:P0}):{priceWithVat}");
 
-int lapTopPrice = 65000;
-int monthsCount = 12;
-double interestRate = 0.08;
+// int lapTopPrice = 65000;
+// int monthsCount = 12;
+// double interestRate = 0.08;
 
-double totalWithInterest = lapTopPrice * (1 + interestRate);
-double monthlyPayment = totalWithInterest / monthsCount;
+// double totalWithInterest = lapTopPrice * (1 + interestRate);
+// double monthlyPayment = totalWithInterest / monthsCount;
 
-Console.WriteLine($"Цена ноутбука: {lapTopPrice} руб.");
-Console.WriteLine($"Итого с процентами: {totalWithInterest} руб");
-Console.WriteLine($"Платеж в месяц: {monthlyPayment} руб.");
+// Console.WriteLine($"Цена ноутбука: {lapTopPrice} руб.");
+// Console.WriteLine($"Итого с процентами: {totalWithInterest} руб");
+// Console.WriteLine($"Платеж в месяц: {monthlyPayment} руб.");
 
 
+// string fullName = "Иванов Иван Иванович";
+// string group = "ИСП-252";
+// int course = 2;
+// string specialty = "09.02.07";
+// // переменные для подсчета средней оценки
+// double grade1 = 4.5;
+// double grade2 = 4.0;
+// double grade3 = 4.5;
+// bool stip;
+// int totalWeeks = 20;
+// int weeksPassed = 2;
+// int weeksRemaining;
+// // константа минимальный средний балл для получения стипендии
+// const double mingrade = 4.0;
+// double grade = (grade1 + grade2 + grade3) / 3;
+// weeksRemaining = totalWeeks - weeksPassed;
+// // сравнение положена ли стипендия 
+// stip = grade >= mingrade;
+
+// Console.WriteLine("===== ВИЗИТНАЯ КАРТОЧКА СТУДЕНТА =====");
+// Console.WriteLine();
+// Console.WriteLine($"ФИО:        {fullName}");
+// Console.WriteLine($"Группа:     {group}");
+// Console.WriteLine($"Курс:       {course}");
+// Console.WriteLine($"Специальность: {specialty}");
+// Console.WriteLine();
+// Console.WriteLine($"Средний балл за 3 работы: {grade}");
+// Console.WriteLine($"Стипендия положена (>= 4): {stip}");
+// Console.WriteLine();
+// Console.WriteLine($"Учебных недель осталось в семестре: {weeksRemaining}");
+
+
+int scholarShip = 3500;
+int monthlyExpenses = 3000;
+int fullMonth = scholarShip - monthlyExpenses;
+Console.WriteLine($"Остаток в месяц: {fullMonth} руб.");
+const int monthsInSemestr = 4;
+int total = fullMonth * monthsInSemestr;
+Console.WriteLine($"Остаток денег за семестр: {total} руб.");
